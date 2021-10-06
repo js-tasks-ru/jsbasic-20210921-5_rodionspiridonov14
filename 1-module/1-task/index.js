@@ -1,4 +1,8 @@
 function factorial(n) {
   // ваш код...
-  return (n != 0) ? n * factorial(n - 1) : 1;
+  if(n != 0 && n != 1) {
+    return n * factorial(n - 1);
+  } else {
+    return 1;
   }
+}
